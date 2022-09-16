@@ -1,17 +1,18 @@
 #include "main.h"
 
 /**
- * _abs - compute absolute value of integer
- * @n: integer argument
- * Return: absolute value
+ * print_line - printing lines
+ * @n: number times
+ *
+ * Return: void
  */
 
-int _abs(int n)
+void print_line(int n)
 {
-	if (n > 0)
-		return (n);
-	else if (n < 0)
-		return (-n);
-
-	return (0);
+	int k;
+	for (k = 0; k < n; k++)
+	{
+		putchar(");
+	}
+	_putchar('\n');
 }
