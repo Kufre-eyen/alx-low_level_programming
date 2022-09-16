@@ -3,6 +3,7 @@
 /**
  * print_line - printing lines
  * @n: number times
+ *
  * Return: void
  */
 
