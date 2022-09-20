@@ -70,11 +70,11 @@ int _atoi(char *s)
 	unsigned int num = 0;
 	int digit = (idx_num_starts(s));
 
-	if (idx_digit_starts < 0) /* if no digits found, exit program */
+	if (idx_digits_starts < 0) /* if no digits found, exit program */
 		return (0);
 	sign = find_sign(s);
 
-	while ((s[idx_digit_starts] >= '0' && s[idx_digits] <= '9')
+	while ((s[idx_digits_starts] >= '0' && s[idx_digits] <= '9')
 			&& (idx_digit_starts <= _strlen(s)))
 		/* count digits to print */
 	{
@@ -92,7 +92,7 @@ int _atoi(char *s)
 	for (i = digit; i < (digit + digits_to_print); i++) /* calculate num */
 	{
 		num += (s[i] - '0') * t;
-		t / = 10;
+		t /= 10;
 	}
 
 	return (num * sign);
