@@ -21,7 +21,7 @@ void print_line(char *c, int s, int l)
 		else
 			printf(" ");
 		if (j % 2)
-			putchar('-');
+			putchar('_');
 	}
 	for (k = 0; k <= s; k++)
 	{
